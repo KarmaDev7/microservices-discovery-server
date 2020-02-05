@@ -1,0 +1,18 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: discoveryservice
+  rabbitmq:
+    host:  localhost
+    port:  5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8010/eureka
+
